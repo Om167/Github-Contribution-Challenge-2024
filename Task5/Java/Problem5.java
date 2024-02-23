@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 /**
 
 We can scramble a string s to get a string t using the following algorithm:
@@ -41,9 +43,21 @@ s1 and s2 consist of lowercase English letters.
 //Complete given code, not need to change class name and method name.
 
 class Solution {
-    public boolean isScramble(String s1, String s2)
-    {
-        return 1;
+    public boolean isScramble(String s1, String s2){
+        HashMap <String , Integer> map = new HashMap<>();
+        if(s1.length() != s2.length()){
+            return false;
+        }
+        else if(s1.length()==0){
+            return true;
+        }
+        else if(s1.equals(s2)){
+            return true;
+        }
+        else if(s1.length())
+
+
+
     }
         
 }

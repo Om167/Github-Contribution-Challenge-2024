@@ -24,19 +24,25 @@ Constraints:
 
 **/
 
-public class Solution {
-    public boolean isPalindrome(int y) {
-        if (x < 0) {
+public class Problem1 {
+    public static boolean isPalindrome(int x) {
+        if(x<0){
             return true;
         }
-        int reversedNumber = 0;
+        int reverseNumber = 0;
         int originalNumber = x;
-        while (x > 0) {
-            int digit = x % 10;
-            x = x / 10;
-            reversedNumber == reversedNumber * 10 + digit;
-        }
 
-        return originalNumber = reversedNumber;
-    }
+        while (x != 0) {
+            int digit = x % 10;
+            x = x/ 10;
+
+            reverseNumber = reverseNumber * 10 + digit;
+        }
+        if ( reverseNumber == originalNumber) {
+            return true;
+        }
+        return false;
+    }
+
+
 }
